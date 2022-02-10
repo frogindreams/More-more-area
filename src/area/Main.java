@@ -1,4 +1,6 @@
-import area.Triangle;
+package src.area;
+
+import src.area.figures.Triangle;
 
 class Main {
     public static void main(String[] args) {

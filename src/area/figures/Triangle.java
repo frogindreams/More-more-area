@@ -1,23 +1,7 @@
-package area;
+package src.area.figures;
 
+import src.area.polygon.Polygon;
 import java.lang.Math;
-
-interface Polygon {
-    /*
-     * an interface is used to help to create new figure-classes
-     */
-
-    void getArea();
-
-    default void getPerimeter(int... sides) {
-        int perimeter = 0;
-        for (int side: sides) {
-            perimeter += side;
-        }
-
-        System.out.println("The perimeter is " + perimeter);
-    }
-}
 
 public class Triangle implements Polygon {
     private int a, b, c;
